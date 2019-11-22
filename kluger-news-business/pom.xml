@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>kluger-news</artifactId>
+    <groupId>kluger-news</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>kluger-news</groupId>
-  <artifactId>kluger-news</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>kluger-news-api</module>
-    <module>kluger-news-job</module>
-    <module>kluger-news-mq</module>
-    <module>kluger-news-business</module>
-    <module>kluger-news-monitor</module>
-  </modules>
-  <packaging>pom</packaging>
+  <artifactId>kluger-news-business</artifactId>
+  <packaging>war</packaging>
 
-  <name>kluger-news</name>
+  <name>kluger-news-business</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -36,7 +32,7 @@
   </dependencies>
 
   <build>
-    <finalName>kluger-news</finalName>
+    <finalName>kluger-news-business</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
